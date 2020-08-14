@@ -1,0 +1,24 @@
+<div class="selector-main">
+  <div class="header">
+    <input type="text" class="search-bar" (keypress)="onSearchChange($event)" />
+
+    <button class="fetch-button" type="button" (click)="onFetchClick()">
+      Fetch
+    </button>
+
+    <button class="select-all" type="button" (click)="onSelectAllClicked()">
+      Select All
+    </button>
+  </div>
+  <div class="body">
+    <ul class="list-group">
+      <li
+        class="list-group-item item"
+        *ngFor="let item of items | startsWith: query"
+      >
+        <input type="checkbox" name="item" [ngModel]="item.isSelected" />
+        {{ item.title }}
+      </li>
+    </ul>
+  </div>
+</div>
