@@ -1,4 +1,6 @@
-# Unit testing in Angular. Building a widget using TDD - a screencast.
+# Unit testing in Angular. 
+Building a widget using TDD - a screencast.
+
 Only unit (and integration) testing, no end-to-end (e2e) testing
 
 # Test
